@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="icon" href="public/images/icon.svg" type="image/svg+xml">
+    <style>
+        .columnas {
+            border: 1px solid #000;
+        }
+        .container {
+            height: 100vh;
+        }
+        .columnas {
+            height: fit-content;
+            width: 500px;
+        }
+        .gap {
+            gap: 6%;
+        }
+    </style>
 </head>
+
 <body>
-    <section>
-        
-    </section>
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="row gap">
+            <div class="columnas col-sm p-3">
+                <img src="images\nokia-3310\nokia-3310.webp" alt="Nokia" width="350" height="500">
+            </div>
+            <div class="columnas col-sm p-3">
+                <h2>ASUS VivoBook 15 M1502YA-NJ153W AMD Ryzen 7 7730U/16GB/512GB SSD/15.6"</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic fugit alias eos, nobis qui pariatur ipsa ducimus magnam nam, repellat harum asperiores atque deleniti rerum? Ullam fuga eos provident quis.</p>
+            </div>
+            <div class="columnas col-sm p-3">
+                <h1>Producto 3</h1>
+                <p>$300</p>
+                <button class="btn btn-primary">Comprar</button>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
