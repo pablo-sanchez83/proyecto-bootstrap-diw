@@ -33,6 +33,8 @@
     .custom-form .btn-primary {
       border-radius: 5px;
       width: 100%;
+      background-color: orange; /* Cambio de color a naranja */
+      border-color: orange; /* Cambio de color del borde a naranja */
     }
 
     .contenedor {
@@ -96,11 +98,15 @@
                 placeholder="Ingrese su correo electrónico">
             </div>
             <div class="form-group">
+              <label for="telefono">Teléfono:</label>
+              <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Ingrese su teléfono">
+            </div>
+            <div class="form-group">
               <label for="mensaje">Mensaje:</label>
               <textarea class="form-control" id="mensaje" name="mensaje" rows="3"
                 placeholder="Escriba su mensaje"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-warning">Enviar</button> <!-- Cambio de clase a btn-warning para color naranja -->
           </form>
         </div>
       </div>
