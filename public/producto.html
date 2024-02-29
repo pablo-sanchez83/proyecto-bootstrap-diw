@@ -11,16 +11,20 @@
         .columnas {
             border: 1px solid #000;
         }
+
         .container {
             height: 100vh;
         }
+
         .columnas {
             height: fit-content;
             width: 500px;
         }
+
         .gap {
             gap: 6%;
         }
+
         .contenedor {
             height: inherit;
             width: 100%;
@@ -28,8 +32,15 @@
             justify-content: center;
             align-items: center;
         }
+
         .navbar-nav .nav-link {
             color: white;
+        }
+
+        footer {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
@@ -37,28 +48,30 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand text-white" href="./index.html"><img src="/public/images/icon.svg" type="image/svg+xml"  width="30" height="30"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="contenedor">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="./productos.html">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="./registro.html">Registro</a>
-                  </li>
-                </ul>
+            <a class="navbar-brand text-white" href="./index.html"><img src="/public/images/icon.svg"
+                    type="image/svg+xml" width="30" height="30"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="contenedor">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./registro.html">Registro</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </div>
     </nav>
-    
+
     <div class="container d-flex justify-content-center align-items-center">
         <div class="row gap">
             <div class="columnas col-sm p-3">
@@ -66,7 +79,9 @@
             </div>
             <div class="columnas col-sm p-3">
                 <h2>ASUS VivoBook 15 M1502YA-NJ153W AMD Ryzen 7 7730U/16GB/512GB SSD/15.6"</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic fugit alias eos, nobis qui pariatur ipsa ducimus magnam nam, repellat harum asperiores atque deleniti rerum? Ullam fuga eos provident quis.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic fugit alias eos, nobis qui pariatur
+                    ipsa ducimus magnam nam, repellat harum asperiores atque deleniti rerum? Ullam fuga eos provident
+                    quis.</p>
             </div>
             <div class="columnas col-sm p-3">
                 <h1>Producto 3</h1>
@@ -78,10 +93,10 @@
     <footer class="bg-dark text-white text-center">
         <div class="container p-4"></div>
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-          © 2024 Copyright:
-          <a class="text-white" href="./index.html">iPear</a>
+            © 2024 Copyright:
+            <a class="text-white" href="./index.html">iPear</a>
         </div>
-      </footer>
+    </footer>
 </body>
 
 </html>
