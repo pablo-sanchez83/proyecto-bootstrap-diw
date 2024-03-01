@@ -27,14 +27,11 @@
             background-size: cover;
             transition: 0.5s ease;
             &:hover {
-                animation: 2s nokiachange steps(21) infinite; 
+                animation: 1s nokiachange steps(60) infinite; 
             }
         }
 
         @keyframes nokiachange {
-            from {
-                background-image: url('/public/images/n02/r0.jpg');
-            }
             5%{
                 background-image: url('/public/images/n02/r1.webp');
             }
@@ -72,28 +69,28 @@
                 background-image: url('/public/images/n02/r12.webp');
             }
             65%{
-                background-image: url('/public/images/n02/r13.webp');
-            }
-            70%{
                 background-image: url('/public/images/n02/r14.webp');
             }
-            75%{
+            70%{
                 background-image: url('/public/images/n02/r15.webp');
             }
-            80%{
+            75%{
                 background-image: url('/public/images/n02/r16.webp');
             }
-            85%{
+            80%{
                 background-image: url('/public/images/n02/r17.webp');
             }
-            90%{
+            85%{
                 background-image: url('/public/images/n02/r18.webp');
             }
-            95%{
+            90%{
                 background-image: url('/public/images/n02/r19.webp');
             }
-            100%{
+            95%{
                 background-image: url('/public/images/n02/r20.webp');
+            }
+            to {
+                background-image: url('/public/images/n02/r0.webp');
             }
         }
     </style>
