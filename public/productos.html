@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -20,6 +20,38 @@
             color: white;
         }
 
+        #n3310 {
+            background-image: url('/public/images/n-3310/front.jpg');
+            aspect-ratio: 11/25;
+            background-position: center;
+            background-size: cover;
+            transition: 0.5s ease;
+            &:hover {
+                animation: nokiachange 5s infinite linear; 
+            }
+        }
+
+        @keyframes nokiachange {
+            from {
+                background-image: url('/public/images/n-3310/front.jpg');
+            }
+            25% {
+                background-image: url('/public/images/n-3310/r30.jpg');
+
+            }
+
+            50% {
+                background-image: url('/public/images/n-3310/side.jpg');
+            }
+
+            75% {
+                background-image: url('/public/images/n-3310/back.jpg');
+            }
+
+            to {
+                background-image: url('/public/images/n-3310/front.jpg');
+            }
+        }
     </style>
 </head>
 
@@ -55,9 +87,8 @@
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 grid row-gap-3">
                 <div class="col">
                     <div class="card">
-                        <a data-bs-toggle="modal" data-bs-target="#nokia-3310">
-                            <img src="/public/images/nokia-3310/nokia-3310.webp" class="card-img-top"
-                                style="max-width: 16em; height: auto;" alt="Nokia ">
+                        <a data-bs-toggle="modal" class="d-flex justify-content-center" data-bs-target="#nokia-3310">
+                            <div class="card-img-top" style="width: 10em; height: auto;" id="n3310"></div>
                         </a>
                         <div class="card-body">
                             <h5 class="card-title">Nokia 3310</h5>
