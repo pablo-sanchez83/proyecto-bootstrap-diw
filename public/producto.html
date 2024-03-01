@@ -4,25 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Producto</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="icon" href="public/images/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="/public/images/icon.svg" type="image/svg+xml">
     <style>
-        .columnas {
-            border: 1px solid #000;
+        .margin-between {
+            margin: 10px 0;
         }
 
-        .container {
-            height: 100vh;
-        }
 
-        .columnas {
-            height: fit-content;
-            width: 500px;
-        }
 
-        .gap {
-            gap: 6%;
+        body {
+            margin: 0;
         }
 
         .contenedor {
@@ -36,7 +29,6 @@
         .navbar-nav .nav-link {
             color: white;
         }
-
     </style>
 </head>
 
@@ -53,13 +45,13 @@
                 <div class="contenedor">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link active text-white" aria-current="page" href="./index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="./productos.html">Productos</a>
+                            <a class="nav-link text-white" href="./public/productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="./registro.html">Registro</a>
+                            <a class="nav-link text-white" href="./public/registro.html">Registro</a>
                         </li>
                     </ul>
                 </div>
@@ -67,24 +59,233 @@
         </div>
     </nav>
 
-    <div class="container d-flex justify-content-center align-items-center">
-        <div class="row gap">
-            <div class="columnas col-sm p-3">
-                <img src="/public/images/nokia-3310/nokia-3310.webp" alt="Nokia" width="350" height="500">
+
+
+
+
+    <section class="container-section">
+        <div class="p-5 row margin-between align-items-stretch g-3">
+            <!-- Primera fila -->
+            <div class="col-md-7">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <!-- Contenido columna 1 -->
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://via.placeholder.com/500x300" class="d-block w-100"
+                                        alt="Imagen de producto 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://via.placeholder.com/400x300" class="d-block w-100"
+                                        alt="Imagen de producto 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://via.placeholder.com/300x300" class="d-block w-100"
+                                        alt="Imagen de producto 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="columnas col-sm p-3">
-                <h2>ASUS VivoBook 15 M1502YA-NJ153W AMD Ryzen 7 7730U/16GB/512GB SSD/15.6"</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic fugit alias eos, nobis qui pariatur
-                    ipsa ducimus magnam nam, repellat harum asperiores atque deleniti rerum? Ullam fuga eos provident
-                    quis.</p>
-            </div>
-            <div class="columnas col-sm p-3">
-                <h1>Producto 3</h1>
-                <p>$300</p>
-                <button class="btn btn-primary">Comprar</button>
+            <div class="col-md-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <!-- Contenido columna 2 -->
+                        <h5 class="card-title">Nokia 3310</h5>
+                        <!-- Ahora el precio -->
+                        <h6 class="card-subtitle mb-2 text-muted">299.99 €</h6>
+                        <p class="card-text">
+                            Descubre la leyenda renovada: el Nokia 3310. Con su diseño icónico y durabilidad
+                            incomparable, este teléfono te ofrece fiabilidad y estilo retro. Disfruta de llamadas
+                            claras, mensajería instantánea y juegos clásicos. ¡Vuelve a lo básico con el Nokia 3310!
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="p-5 row-section row margin-between">
+            <!-- Segunda fila -->
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- Contenido fila 2 -->
+                        <h5 class="card-title">Caracteristicas</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi itaque
+                            quas et deleniti, ipsum totam distinctio inventore laboriosam nam, nisi error quidem
+                            laborum! Neque maiores consequatur ipsum quasi corrupti.
+                            Repellat fuga et ab. Accusamus excepturi impedit quas iste, vitae libero saepe
+                            exercitationem modi similique culpa odio illum ex, corrupti accusantium. Ab modi recusandae
+                            aliquid ullam consequatur vel sequi ipsum!
+                            Hic, autem. Voluptatem, sunt? Voluptatum harum, perferendis exercitationem minima iure
+                            assumenda error enim similique et at dolorum? Officiis ipsum ducimus officia sunt nisi
+                            molestiae inventore dignissimos! Illum dolorum neque inventore?
+                            Aspernatur, quod. At, ratione. Impedit voluptatem quae nisi, minus inventore cumque maxime,
+                            voluptatibus ea maiores optio eaque accusantium voluptatum sequi hic nihil officiis
+                            praesentium sapiente explicabo repudiandae omnis repellendus sed.
+                            Dolorem in tempora totam alias. Officiis voluptatem deserunt hic animi, libero atque debitis
+                            aliquam, asperiores rem ea quasi praesentium aperiam dolores iusto ipsum consequuntur! Ipsam
+                            quod obcaecati voluptate? Adipisci, facere.
+                            Dolorum error laboriosam incidunt, unde alias quasi a nostrum perspiciatis nam perferendis
+                            doloremque consequuntur blanditiis labore iste modi, at, nisi illo dolor accusamus. Vero
+                            corporis quas nam fuga dolore alias.
+                            Adipisci, harum perferendis! Porro alias minima, repellendus rerum neque aperiam magni
+                            reiciendis? Deleniti et illum natus cupiditate, vero eligendi, quos libero, eaque provident
+                            odit magni ducimus fugit id unde. Sapiente?
+                            Quae officiis sunt dolorem porro? Ut laudantium non unde doloribus accusamus vitae, magnam
+                            quis eum nemo labore facere voluptate perspiciatis fugit dolorum id maiores ipsum possimus
+                            impedit necessitatibus sit dolorem?
+                            Minus, beatae nemo odit maiores, tenetur deserunt reiciendis aliquam fugit sint incidunt
+                            iste doloremque fugiat possimus quo provident molestias modi excepturi ipsum, voluptatibus
+                            quis? Soluta omnis dicta porro beatae quas.
+                            Nam accusamus quas aliquam itaque dolor! Soluta animi, aperiam placeat suscipit, ea quam,
+                            quia nesciunt et vel eligendi nostrum at unde delectus facilis. Corrupti dolores itaque
+                            similique aliquam debitis odit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                            animi itaque quas et deleniti, ipsum totam distinctio inventore laboriosam nam, nisi error
+                            quidem laborum! Neque maiores consequatur ipsum quasi corrupti.
+                            Repellat fuga et ab. Accusamus excepturi impedit quas iste, vitae libero saepe
+                            exercitationem modi similique culpa odio illum ex, corrupti accusantium. Ab modi recusandae
+                            aliquid ullam consequatur vel sequi ipsum!
+                            Hic, autem. Voluptatem, sunt? Voluptatum harum, perferendis exercitationem minima iure
+                            assumenda error enim similique et at dolorum? Officiis ipsum ducimus officia sunt nisi
+                            molestiae inventore dignissimos! Illum dolorum neque inventore?
+                            Aspernatur, quod. At, ratione. Impedit voluptatem quae nisi, minus inventore cumque maxime,
+                            voluptatibus ea maiores optio eaque accusantium voluptatum sequi hic nihil officiis
+                            praesentium sapiente explicabo repudiandae omnis repellendus sed.
+                            Dolorem in tempora totam alias. Officiis voluptatem deserunt hic animi, libero atque debitis
+                            aliquam, asperiores rem ea quasi praesentium aperiam dolores iusto ipsum consequuntur! Ipsam
+                            quod obcaecati voluptate? Adipisci, facere.
+                            Dolorum error laboriosam incidunt, unde alias quasi a nostrum perspiciatis nam perferendis
+                            doloremque consequuntur blanditiis labore iste modi, at, nisi illo dolor accusamus. Vero
+                            corporis quas nam fuga dolore alias.
+                            Adipisci, harum perferendis! Porro alias minima, repellendus rerum neque aperiam magni
+                            reiciendis? Deleniti et illum natus cupiditate, vero eligendi, quos libero, eaque provident
+                            odit magni ducimus fugit id unde. Sapiente?
+                            Quae officiis sunt dolorem porro? Ut laudantium non unde doloribus accusamus vitae, magnam
+                            quis eum nemo labore facere voluptate perspiciatis fugit dolorum id maiores ipsum possimus
+                            impedit necessitatibus sit dolorem?
+                            Minus, beatae nemo odit maiores, tenetur deserunt reiciendis aliquam fugit sint incidunt
+                            iste doloremque fugiat possimus quo provident molestias modi excepturi ipsum, voluptatibus
+                            quis? Soluta omnis dicta porro beatae quas.
+                            Nam accusamus quas aliquam itaque dolor! Soluta animi, aperiam placeat suscipit, ea quam,
+                            quia nesciunt et vel eligendi nostrum at unde delectus facilis. Corrupti dolores itaque
+                            similique aliquam debitis odit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                            animi itaque quas et deleniti, ipsum totam distinctio inventore laboriosam nam, nisi error
+                            quidem laborum! Neque maiores consequatur ipsum quasi corrupti.
+                            Repellat fuga et ab. Accusamus excepturi impedit quas iste, vitae libero saepe
+                            exercitationem modi similique culpa odio illum ex, corrupti accusantium. Ab modi recusandae
+                            aliquid ullam consequatur vel sequi ipsum!
+                            Hic, autem. Voluptatem, sunt? Voluptatum harum, perferendis exercitationem minima iure
+                            assumenda error enim similique et at dolorum? Officiis ipsum ducimus officia sunt nisi
+                            molestiae inventore dignissimos! Illum dolorum neque inventore?
+                            Aspernatur, quod. At, ratione. Impedit voluptatem quae nisi, minus inventore cumque maxime,
+                            voluptatibus ea maiores optio eaque accusantium voluptatum sequi hic nihil officiis
+                            praesentium sapiente explicabo repudiandae omnis repellendus sed.
+                            Dolorem in tempora totam alias. Officiis voluptatem deserunt hic animi, libero atque debitis
+                            aliquam, asperiores rem ea quasi praesentium aperiam dolores iusto ipsum consequuntur! Ipsam
+                            quod obcaecati voluptate? Adipisci, facere.
+                            Dolorum error laboriosam incidunt, unde alias quasi a nostrum perspiciatis nam perferendis
+                            doloremque consequuntur blanditiis labore iste modi, at, nisi illo dolor accusamus. Vero
+                            corporis quas nam fuga dolore alias.
+                            Adipisci, harum perferendis! Porro alias minima, repellendus rerum neque aperiam magni
+                            reiciendis? Deleniti et illum natus cupiditate, vero eligendi, quos libero, eaque provident
+                            odit magni ducimus fugit id unde. Sapiente?
+                            Quae officiis sunt dolorem porro? Ut laudantium non unde doloribus accusamus vitae, magnam
+                            quis eum nemo labore facere voluptate perspiciatis fugit dolorum id maiores ipsum possimus
+                            impedit necessitatibus sit dolorem?
+                            Minus, beatae nemo odit maiores, tenetur deserunt reiciendis aliquam fugit sint incidunt
+                            iste doloremque fugiat possimus quo provident molestias modi excepturi ipsum, voluptatibus
+                            quis? Soluta omnis dicta porro beatae quas.
+                            Nam accusamus quas aliquam itaque dolor! Soluta animi, aperiam placeat suscipit, ea quam,
+                            quia nesciunt et vel eligendi nostrum at unde delectus facilis. Corrupti dolores itaque
+                            similique aliquam debitis odit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                            animi itaque quas et deleniti, ipsum totam distinctio inventore laboriosam nam, nisi error
+                            quidem laborum! Neque maiores consequatur ipsum quasi corrupti.
+                            Repellat fuga et ab. Accusamus excepturi impedit quas iste, vitae libero saepe
+                            exercitationem modi similique culpa odio illum ex, corrupti accusantium. Ab modi recusandae
+                            aliquid ullam consequatur vel sequi ipsum!
+                            Hic, autem. Voluptatem, sunt? Voluptatum harum, perferendis exercitationem minima iure
+                            assumenda error enim similique et at dolorum? Officiis ipsum ducimus officia sunt nisi
+                            molestiae inventore dignissimos! Illum dolorum neque inventore?
+                            Aspernatur, quod. At, ratione. Impedit voluptatem quae nisi, minus inventore cumque maxime,
+                            voluptatibus ea maiores optio eaque accusantium voluptatum sequi hic nihil officiis
+                            praesentium sapiente explicabo repudiandae omnis repellendus sed.
+                            Dolorem in tempora totam alias. Officiis voluptatem deserunt hic animi, libero atque debitis
+                            aliquam, asperiores rem ea quasi praesentium aperiam dolores iusto ipsum consequuntur! Ipsam
+                            quod obcaecati voluptate? Adipisci, facere.
+                            Dolorum error laboriosam incidunt, unde alias quasi a nostrum perspiciatis nam perferendis
+                            doloremque consequuntur blanditiis labore iste modi, at, nisi illo dolor accusamus. Vero
+                            corporis quas nam fuga dolore alias.
+                            Adipisci, harum perferendis! Porro alias minima, repellendus rerum neque aperiam magni
+                            reiciendis? Deleniti et illum natus cupiditate, vero eligendi, quos libero, eaque provident
+                            odit magni ducimus fugit id unde. Sapiente?
+                            Quae officiis sunt dolorem porro? Ut laudantium non unde doloribus accusamus vitae, magnam
+                            quis eum nemo labore facere voluptate perspiciatis fugit dolorum id maiores ipsum possimus
+                            impedit necessitatibus sit dolorem?
+                            Minus, beatae nemo odit maiores, tenetur deserunt reiciendis aliquam fugit sint incidunt
+                            iste doloremque fugiat possimus quo provident molestias modi excepturi ipsum, voluptatibus
+                            quis? Soluta omnis dicta porro beatae quas.
+                            Nam accusamus quas aliquam itaque dolor! Soluta animi, aperiam placeat suscipit, ea quam,
+                            quia nesciunt et vel eligendi nostrum at unde delectus facilis. Corrupti dolores itaque
+                            similique aliquam debitis odit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                            animi itaque quas et deleniti, ipsum totam distinctio inventore laboriosam nam, nisi error
+                            quidem laborum! Neque maiores consequatur ipsum quasi corrupti.
+                            Repellat fuga et ab. Accusamus excepturi impedit quas iste, vitae libero saepe
+                            exercitationem modi similique culpa odio illum ex, corrupti accusantium. Ab modi recusandae
+                            aliquid ullam consequatur vel sequi ipsum!
+                            Hic, autem. Voluptatem, sunt? Voluptatum harum, perferendis exercitationem minima iure
+                            assumenda error enim similique et at dolorum? Officiis ipsum ducimus officia sunt nisi
+                            molestiae inventore dignissimos! Illum dolorum neque inventore?
+                            Aspernatur, quod. At, ratione. Impedit voluptatem quae nisi, minus inventore cumque maxime,
+                            voluptatibus ea maiores optio eaque accusantium voluptatum sequi hic nihil officiis
+                            praesentium sapiente explicabo repudiandae omnis repellendus sed.
+                            Dolorem in tempora totam alias. Officiis voluptatem deserunt hic animi, libero atque debitis
+                            aliquam, asperiores rem ea quasi praesentium aperiam dolores iusto ipsum consequuntur! Ipsam
+                            quod obcaecati voluptate? Adipisci, facere.
+                            Dolorum error laboriosam incidunt, unde alias quasi a nostrum perspiciatis nam perferendis
+                            doloremque consequuntur blanditiis labore iste modi, at, nisi illo dolor accusamus. Vero
+                            corporis quas nam fuga dolore alias.
+                            Adipisci, harum perferendis! Porro alias minima, repellendus rerum neque aperiam magni
+                            reiciendis? Deleniti et illum natus cupiditate, vero eligendi, quos libero, eaque provident
+                            odit magni ducimus fugit id unde. Sapiente?
+                            Quae officiis sunt dolorem porro? Ut laudantium non unde doloribus accusamus vitae, magnam
+                            quis eum nemo labore facere voluptate perspiciatis fugit dolorum id maiores ipsum possimus
+                            impedit necessitatibus sit dolorem?
+                            Minus, beatae nemo odit maiores, tenetur deserunt reiciendis aliquam fugit sint incidunt
+                            iste doloremque fugiat possimus quo provident molestias modi excepturi ipsum, voluptatibus
+                            quis? Soluta omnis dicta porro beatae quas.
+                            Nam accusamus quas aliquam itaque dolor! Soluta animi, aperiam placeat suscipit, ea quam,
+                            quia nesciunt et vel eligendi nostrum at unde delectus facilis. Corrupti dolores itaque
+                            similique aliquam debitis odit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
     <footer class="bg-dark text-white text-center">
         <div class="container p-2"></div>
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
@@ -92,6 +293,11 @@
             <a class="text-white" href="./index.html">iPear</a>
         </div>
     </footer>
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
 </body>
 
 </html>
