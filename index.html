@@ -11,13 +11,11 @@
     body {
       margin: 0;
     }
-    .container-fluid {
+    #carouselExample {
+      overflow-y: hidden;
       padding: 0;
       margin: 0;
       overflow-x: hidden;
-    }
-    #carouselExample {
-      overflow-y: hidden;
     }
     .contenedor {
       height: inherit;
@@ -54,6 +52,9 @@
             <li class="nav-item">
               <a class="nav-link text-white" href="/public/registro.html">Registro</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/public/registro.html">Contáctanos</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -62,16 +63,19 @@
   <div class="container-fluid" id="carouselExample">
     <div class="row">
         <div class="col-12">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500" style="height: 100vh;"> <!-- Se establece la altura en 100vh (viewport height) -->
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500" style="height: auto;">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="https://imgs.search.brave.com/FE885USw5PiV5T9_geKnR38rWS2Z4iz5ZvqV6suBLJU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/YXV0b3Bpc3RhLmVz/L3VwbG9hZHMvczEv/NDcvMzMvNTQvMi81/YjdkMmMxNzBlZTY5/NDM3MTUzNDlhM2Qt/bG9zLW1lam9yZXMt/bW9tZW50b3MtZGUt/ZmVybmFuZG8tYWxv/bnNvLWVuLWYxLWVu/LWltYWdlbmVzLmpw/ZWc" class="w-100" alt="...">
+                        <img src="./public/images/phone2_1_1.jpg" class="w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="https://imgs.search.brave.com/cHxz9vrKW_GzApUGTraaG8a_vN-1gjgEkxBOxQi9re4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4t/aW1hZ2VzLm1vdG9y/LmVzL2ltYWdlL20v/Njk0dy53ZWJwL2Zv/dG9zLW5vdGljaWFz/LzIwMjQvMDIvZm90/b3MtZGVidXQtZmVy/bmFuZG8tYWxvbnNv/LWFzdG9uLW1hcnRp/bi1hbXIyNC1mMS0y/MDI0MTAwMzIxLTE3/MDc3NTk5MTNfMS5q/cGc" class="w-100" alt="...">
+                        <img src="./public/images/redmi.webp" class="w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="https://imgs.search.brave.com/0c9mrhDcDXWGJ1X2z4xqcqc7UJaywQlC-mgCgNA9lpw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9lMS5w/eGZ1ZWwuY29tL2Rl/c2t0b3Atd2FsbHBh/cGVyLzY2OC8yMi9k/ZXNrdG9wLXdhbGxw/YXBlci1mZXJuYW5k/by1hbG9uc28taW4t/Zm9ybXVsYS0xLXVs/dHJhLWZlcm5hbmRv/LWFsb25zby5qcGc" class="w-100" alt="...">
+                        <img src="./public/images/iphone.jpg" class="w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./public/images/samsung.avif" class="w-100" alt="...">
                     </div>
                 </div>
             </div>
@@ -83,23 +87,14 @@
     <div class="row mt-4">
       <div class="col-6">
         <div class="card">
-          <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Producto 1</h5>
-            <p class="card-text">Descripción corta del producto 1.</p>
-            <a href="#" class="btn btn-primary">Ver Detalles</a>
-          </div>
+          <img src="./public/images/ipad.jpg" class="card-img-top" alt="...">
+
         </div>
       </div>
 
       <div class="col-6">
         <div class="card">
-          <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Producto 2</h5>
-            <p class="card-text">Descripción corta del producto 2.</p>
-            <a href="#" class="btn btn-primary">Ver Detalles</a>
-          </div>
+          <img src="./public/images/nothing2_4.avif" class="card-img-top" alt="...">
         </div>
       </div>
     </div>
@@ -108,52 +103,42 @@
     <div class="row mt-4">
       <div class="col-12  ">
         <div class="card">
-          <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
+          <video autoplay muted loop id="miVideo">
+            <source src="./public/images/nothing2_video_def.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+          </video>
           <div class="card-body">
-            <h5 class="card-title">Producto 1</h5>
-            <p class="card-text">Descripción corta del producto 1.</p>
-            <a href="#" class="btn btn-primary">Ver Detalles</a>
+            <h5 class="card-text">Explora los nuevos diseños revolucionarios a un coste más bajo.</h5>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="container my-5">
-    <div class="row mt-4">
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card">
-          <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Producto 1</h5>
-            <p class="card-text">Descripción corta del producto 1.</p>
-            <a href="#" class="btn btn-primary">Ver Detalles</a>
-          </div>
-        </div>
+  <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./public/images/gaming.jpg" class="d-block w-100" alt="Gaming Laptop">
       </div>
-
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card">
-          <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Producto 2</h5>
-            <p class="card-text">Descripción corta del producto 2.</p>
-            <a href="#" class="btn btn-primary">Ver Detalles</a>
-          </div>
-        </div>
+      <div class="carousel-item">
+        <img src="./public/images/apple_watch.jpg" class="d-block w-100" alt="Apple Watch">
       </div>
-
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card">
-          <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Producto 3</h5>
-            <p class="card-text">Descripción corta del producto 3.</p>
-            <a href="#" class="btn btn-primary">Ver Detalles</a>
-          </div>
-        </div>
+      <div class="carousel-item">
+        <img src="./public/images/macbook.webp" class="d-block w-100" alt="MacBook">
+      </div>
+      <div class="carousel-item">
+        <img src="./public/images/pod.jpeg" class="d-block w-100" alt="MacBook">
       </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
+
   <footer class="bg-dark text-white text-center">
     <div class="container p-2"></div>
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
@@ -161,6 +146,7 @@
       <a class="text-white" href="/index.html">iPear</a>
     </div>
   </footer>
+  <script src="/js/bootstrap.min.js"></script>
   <script src="/js/bootstrap.bundle.min.js"></script>
   <script src="/js/jquery-3.7.1.min.js"></script>
 </body>
