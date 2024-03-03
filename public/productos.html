@@ -6,8 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="icon" href="public/images/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="/public/images/icon.svg" type="image/svg+xml">
     <style>
+        .main {
+            margin-top: 3em;
+            margin-bottom: 3em;
+        }
+
+        .card {
+            border: 0;
+        }
+
+        .extra {
+            margin-top: 40px;
+            height: 18em;
+            width: auto;
+            margin-bottom: 40px;
+        }
+
+        .extra_card {
+            min-height: 39.4em;
+        }
+
         .contenedor {
             height: inherit;
             width: 100%;
@@ -20,107 +40,138 @@
             color: white;
         }
 
-        #n3310 {
+        #nothing2 {
             background-image: url('/public/images/n02/r0.webp');
-            aspect-ratio: 11/25;
             background-position: center;
             background-size: cover;
+            aspect-ratio: 11/25;
+
             &:hover {
-                animation: 1.5s nokiachange steps(120) infinite alternate; 
+                animation: 1.5s display steps(120) infinite alternate;
             }
         }
 
-        @keyframes nokiachange {
+        @keyframes display {
             from {
                 background-image: url('/public/images/n02/r0.webp');
             }
+
             2% {
                 background-image: url('/public/images/n02/r1.webp');
             }
+
             4% {
                 background-image: url('/public/images/n02/r2.webp');
             }
+
             6% {
                 background-image: url('/public/images/n02/r3.webp');
             }
+
             8% {
                 background-image: url('/public/images/n02/r4.webp');
             }
+
             10% {
                 background-image: url('/public/images/n02/r5.webp');
             }
+
             12% {
                 background-image: url('/public/images/n02/r6.webp');
             }
+
             14% {
                 background-image: url('/public/images/n02/r7.webp');
             }
+
             16% {
                 background-image: url('/public/images/n02/r8.webp');
             }
+
             18% {
                 background-image: url('/public/images/n02/r9.webp');
             }
+
             20% {
                 background-image: url('/public/images/n02/r10.webp');
             }
+
             22% {
                 background-image: url('/public/images/n02/r11.webp');
             }
+
             24% {
                 background-image: url('/public/images/n02/r12.webp');
             }
+
             26% {
                 background-image: url('/public/images/n02/r13.webp');
             }
+
             28% {
                 background-image: url('/public/images/n02/r14.webp');
             }
+
             30% {
                 background-image: url('/public/images/n02/r15.webp');
             }
+
             32% {
                 background-image: url('/public/images/n02/r16.webp');
             }
+
             34% {
                 background-image: url('/public/images/n02/r17.webp');
             }
+
             36% {
                 background-image: url('/public/images/n02/r18.webp');
             }
+
             38% {
                 background-image: url('/public/images/n02/r19.webp');
             }
+
             40% {
                 background-image: url('/public/images/n02/r20.webp');
             }
+
             42% {
                 background-image: url('/public/images/n02/r21.webp');
             }
+
             44% {
                 background-image: url('/public/images/n02/r22.webp');
             }
+
             46% {
                 background-image: url('/public/images/n02/r23.webp');
             }
+
             48% {
                 background-image: url('/public/images/n02/r24.webp');
             }
+
             50% {
                 background-image: url('/public/images/n02/r25.webp');
             }
+
             52% {
                 background-image: url('/public/images/n02/r26.webp');
             }
+
             54% {
                 background-image: url('/public/images/n02/r27.webp');
             }
+
             56% {
                 background-image: url('/public/images/n02/r28.webp');
             }
+
             58% {
                 background-image: url('/public/images/n02/r29.webp');
             }
+
             to {
                 background-image: url('/public/images/n02/r30.webp');
             }
@@ -131,7 +182,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand text-white" href="./index.html"><img src="/public/images/icon.svg"
+            <a class="navbar-brand text-white" href="/index.html"><img src="/public/images/icon.svg"
                     type="image/svg+xml" width="30" height="30"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -139,84 +190,100 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="contenedor">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/public/productos.html">Smartphones</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Ordenadores
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Sobremesa</a></li>
+                                <li><a class="dropdown-item" href="#">Portátiles</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">SmartWatch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Accesorios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/public/registro.html">Contáctanos</a>
+                        </li>
+                    </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link text-white" href="/public/registro.html"><img
+                                    src="/public/images/person-circle.svg" style="height: 30px; width: 30px;"></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="./productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="./registro.html">Registro</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="./contacto.html">Contáctanos</a>
-                          </li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="container d-flex justify-content-center">
+    <div class="container d-flex justify-content-center main">
         <div class="container text-center">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 grid row-gap-3">
+            <div class="row row-cols-1 row-cols-md-3 grid row-gap-3">
                 <div class="col">
                     <div class="card">
-                        <a data-bs-toggle="modal" class="d-flex justify-content-center" data-bs-target="#nokia-3310">
-                            <div class="card-img-top" style="width: 10em; height: auto;" id="n3310"></div>
+                        <a data-bs-toggle="modal" class="d-flex justify-content-center" data-bs-target="#nothing-2">
+                            <div class="card-img-top" style="width: 10em; height: auto;" id="nothing2"></div>
                         </a>
                         <div class="card-body">
-                            <h5 class="card-title">Nokia 3310</h5>
+                            <h5 class="card-title">Nothing Phone (2)</h5>
                             <p class="card-text">
-                                Descubre la leyenda renovada: el Nokia 3310. Con su diseño icónico y durabilidad
-                                incomparable, este teléfono te ofrece fiabilidad y estilo retro. Disfruta de llamadas
-                                claras, mensajería instantánea y juegos clásicos. ¡Vuelve a lo básico con el Nokia 3310!
+                                El Nothing Phone 2 es un smartphone de gama alta con un diseño icónico similar al
+                                iPhone. Sin embargo, su principal atractivo son los LEDs que iluminan el cristal
+                                trasero, creando una experiencia única. Cuenta con Glyph Interface, una nueva
+                                forma de comunicación mediante luces y sonidos.
                             </p>
-                            <a href="#" class="btn btn-warning">Comprar</a>
+                            <a href="/public/producto.html" class="btn btn-warning">Comprar</a>
                         </div>
                     </div>
-                    <div class="modal fade" id="nokia-3310" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <div class="modal fade" id="nothing-2" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Nokia 3310</h1>
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Nothing Phone (2)</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Cerrar"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <div id="carousel-nokia-3310" class="carousel slide carousel-dark">
+                                    <div id="carousel-n2" class="carousel slide carousel-dark">
                                         <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carousel-nokia-3310"
-                                                data-bs-slide-to="0" class="active" aria-current="true"
-                                                aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carousel-nokia-3310"
-                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carousel-nokia-3310"
-                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carousel-n2" data-bs-slide-to="0"
+                                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carousel-n2" data-bs-slide-to="1"
+                                                aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carousel-n2" data-bs-slide-to="2"
+                                                aria-label="Slide 3"></button>
                                         </div>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <img src="/public/images/nokia-3310/nokia-3310.webp"
-                                                    class="d-block w-100" alt="...">
+                                                <img src="/public/images/n02/r0.webp" class="d-block w-100" alt="...">
                                             </div>
                                             <div class="carousel-item">
-                                                <img src="/public/images/nokia-3310/nokia-3310.webp"
-                                                    class="d-block w-100" alt="...">
+                                                <img src="/public/images/n02/r15.webp" class="d-block w-100" alt="...">
                                             </div>
                                             <div class="carousel-item">
-                                                <img src="/public/images/nokia-3310/nokia-3310.webp"
-                                                    class="d-block w-100" alt="...">
+                                                <img src="/public/images/n02/r30.webp" class="d-block w-100" alt="...">
                                             </div>
                                         </div>
                                         <button class="carousel-control-prev" type="button"
-                                            data-bs-target="#carousel-nokia-3310" data-bs-slide="prev">
+                                            data-bs-target="#carousel-n2" data-bs-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="visually-hidden">Anterior</span>
                                         </button>
                                         <button class="carousel-control-next" type="button"
-                                            data-bs-target="#carousel-nokia-3310" data-bs-slide="next">
+                                            data-bs-target="#carousel-n2" data-bs-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="visually-hidden">Siguiente</span>
                                         </button>
@@ -229,155 +296,141 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="col">
-                    <div class="card">
+                    <div class="card extra_card">
                         <a data-bs-toggle="modal" data-bs-target="#nokia-3310">
-                            <img src="/public/images/nokia-3310/nokia-3310.webp" class="card-img-top"
-                                style="max-width: 16em; height: auto;" alt="Nokia ">
+                            <img src="/public/images/m01.jpg" class="card-img-top extra" alt="Iphone 13 ">
                         </a>
                         <div class="card-body">
-                            <h5 class="card-title">Peraphone 001</h5>
+                            <h5 class="card-title">Iphone 13</h5>
                             <p class="card-text">
-                                Fusionando lo mejor de la tecnología y la
-                                moda en un dispositivo elegante y potente. Con su diseño ultramoderno y funciones
-                                avanzadas, el Peraphone te ofrece una experiencia única, ¡sobrepasa tus expectativas con
-                                el
-                                Peraphone!
+                                El iPhone 13 es un dispositivo elegante con una pantalla Super Retina XDR de 6,1
+                                pulgadas. Su resolución de 2.532 por 1.170 píxeles ofrece imágenes nítidas y vibrantes.
+                                Equipado con el potente chip A15 Bionic, este teléfono captura fotos impresionantes con
+                                su sistema de cámara dual de 12 Mpx. Además, su resistencia al agua y al polvo lo hace
+                                ideal para aventuras diarias
                             </p>
                             <a href="#" class="btn btn-warning">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
+                    <div class="card extra_card">
                         <a data-bs-toggle="modal" data-bs-target="#nokia-3310">
-                            <img src="/public/images/nokia-3310/nokia-3310.webp" class="card-img-top"
-                                style="max-width: 16em; height: auto;" alt="Nokia ">
+                            <img src="/public/images/m02.jpg" class="card-img-top extra" alt="Samsung s21 5G">
                         </a>
                         <div class="card-body">
-                            <h5 class="card-title">Peraphone 001</h5>
+                            <h5 class="card-title">Samsung s21 5G</h5>
                             <p class="card-text">
-                                Fusionando lo mejor de la tecnología y la
-                                moda en un dispositivo elegante y potente. Con su diseño ultramoderno y funciones
-                                avanzadas, el Peraphone te ofrece una experiencia única, ¡sobrepasa tus expectativas con
-                                el
-                                Peraphone!
+                                El Samsung Galaxy S21 5G es un teléfono de alto rendimiento con un chipset Snapdragon
+                                888, capacidad 5G, 8 GB de RAM, y opciones de almacenamiento de 128 GB o 256 GB. Su
+                                pantalla Dynamic AMOLED de 6.2 pulgadas ofrece una frecuencia de actualización adaptable
+                                de 120 Hz. Además, cuenta con una configuración de triple cámara para fotografía
                             </p>
                             <a href="#" class="btn btn-warning">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
+                    <div class="card extra_card">
                         <a data-bs-toggle="modal" data-bs-target="#nokia-3310">
-                            <img src="/public/images/nokia-3310/nokia-3310.webp" class="card-img-top"
-                                style="max-width: 16em; height: auto;" alt="Nokia ">
+                            <img src="/public/images/m03.jpg" class="card-img-top extra" alt="Pixel8">
                         </a>
                         <div class="card-body">
-                            <h5 class="card-title">Peraphone 001</h5>
+                            <h5 class="card-title">Google Pixel 8</h5>
                             <p class="card-text">
-                                Fusionando lo mejor de la tecnología y la
-                                moda en un dispositivo elegante y potente. Con su diseño ultramoderno y funciones
-                                avanzadas, el Peraphone te ofrece una experiencia única, ¡sobrepasa tus expectativas con
-                                el
-                                Peraphone!
+                                El Google Pixel 8 inaugura la octava serie del smartphone de Google con una pantalla
+                                OLED de 6.2 pulgadas a resolución FHD+ y tasa de refresco de 120Hz. El corazón del Pixel
+                                8 es un procesador Tensor G3 que llega con una configuración nona-core, es decir, de
+                                nueve núcleos, y cuenta con 8GB de RAM y hasta 256GB de almacenamiento interno
                             </p>
                             <a href="#" class="btn btn-warning">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
+                    <div class="card extra_card">
                         <a data-bs-toggle="modal" data-bs-target="#nokia-3310">
-                            <img src="/public/images/nokia-3310/nokia-3310.webp" class="card-img-top"
-                                style="max-width: 16em; height: auto;" alt="Nokia ">
+                            <img src="/public/images/m04.jpg" class="card-img-top extra" alt="OnePlus 12">
                         </a>
                         <div class="card-body">
-                            <h5 class="card-title">Peraphone 001</h5>
+                            <h5 class="card-title">OnePlus 12</h5>
                             <p class="card-text">
-                                Fusionando lo mejor de la tecnología y la
-                                moda en un dispositivo elegante y potente. Con su diseño ultramoderno y funciones
-                                avanzadas, el Peraphone te ofrece una experiencia única, ¡sobrepasa tus expectativas con
-                                el
-                                Peraphone!
+                                El OnePlus 12 redefine el significado de “smooth”. Combina un hardware emblemático con
+                                optimizaciones de software avanzadas. Equipado con la plataforma móvil Snapdragon® 8 Gen
+                                3, hasta 16 GB de RAM LPDDR5X, y una batería de 5400 mAh. Su pantalla AMOLED de 6.82
+                                pulgadas ofrece una tasa de refresco de 120 Hz. Además, cuenta con una configuración de
+                                triple cámara en la parte trasera
                             </p>
                             <a href="#" class="btn btn-warning">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
+                    <div class="card extra_card">
                         <a data-bs-toggle="modal" data-bs-target="#nokia-3310">
-                            <img src="/public/images/nokia-3310/nokia-3310.webp" class="card-img-top"
-                                style="max-width: 16em; height: auto;" alt="Nokia ">
+                            <img src="/public/images/m05.jpg" class="card-img-top extra" alt="Xiaomi 12">
                         </a>
                         <div class="card-body">
-                            <h5 class="card-title">Peraphone 001</h5>
+                            <h5 class="card-title">Xiaomi 12</h5>
                             <p class="card-text">
-                                Fusionando lo mejor de la tecnología y la
-                                moda en un dispositivo elegante y potente. Con su diseño ultramoderno y funciones
-                                avanzadas, el Peraphone te ofrece una experiencia única, ¡sobrepasa tus expectativas con
-                                el
-                                Peraphone!
+                                El Xiaomi 12 es un flagship compacto de la serie 12. Con una pantalla OLED de 6.28
+                                pulgadas y tasa de refresco de 120Hz, el Xiaomi 12 está potenciado por el procesador más
+                                potente de Qualcomm a la fecha, el Snapdragon 8 Gen 1, acompañado de 8GB o 12GB de RAM y
+                                128GB o 256GB de almacenamiento interno
                             </p>
                             <a href="#" class="btn btn-warning">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
+                    <div class="card extra_card">
                         <a data-bs-toggle="modal" data-bs-target="#nokia-3310">
-                            <img src="/public/images/nokia-3310/nokia-3310.webp" class="card-img-top"
-                                style="max-width: 16em; height: auto;" alt="Nokia ">
+                            <img src="/public/images/m06.jpg" class="card-img-top extra" alt="realme c67">
                         </a>
                         <div class="card-body">
-                            <h5 class="card-title">Peraphone 001</h5>
+                            <h5 class="card-title">Realme c67</h5>
                             <p class="card-text">
-                                Fusionando lo mejor de la tecnología y la
-                                moda en un dispositivo elegante y potente. Con su diseño ultramoderno y funciones
-                                avanzadas, el Peraphone te ofrece una experiencia única, ¡sobrepasa tus expectativas con
-                                el
-                                Peraphone!
+                                El Realme C67 es un smartphone de gama media que ofrece un rendimiento potente, una
+                                experiencia visual inmersiva y una cámara impresionante. Con una pantalla LCD de 6.72
+                                pulgadas a 90 Hz, un CPU Snapdragon 685, y una batería de 5,000 mAh,
+                                este dispositivo combina funcionalidad y diseño.
                             </p>
                             <a href="#" class="btn btn-warning">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
+                    <div class="card extra_card">
                         <a data-bs-toggle="modal" data-bs-target="#nokia-3310">
-                            <img src="/public/images/nokia-3310/nokia-3310.webp" class="card-img-top"
-                                style="max-width: 16em; height: auto;" alt="Nokia ">
+                            <img src="/public/images/m07.jpg" class="card-img-top extra" alt="HONOR 90 Lite">
                         </a>
                         <div class="card-body">
-                            <h5 class="card-title">Peraphone 001</h5>
+                            <h5 class="card-title">HONOR 90 Lite</h5>
                             <p class="card-text">
-                                Fusionando lo mejor de la tecnología y la
-                                moda en un dispositivo elegante y potente. Con su diseño ultramoderno y funciones
-                                avanzadas, el Peraphone te ofrece una experiencia única, ¡sobrepasa tus expectativas con
-                                el
-                                Peraphone!
+                                El HONOR 90 Lite se suma como el tercer miembro de la serie HONOR 90. Con una pantalla
+                                LTPS de 6.7 pulgadas a resolución FHD+ y tasa de refresco de 90Hz, el HONOR 90 Lite está
+                                potenciado por un procesador Dimensity 6020 de MediaTek, junto con 8GB de RAM y 256GB de
+                                almacenamiento interno
                             </p>
                             <a href="#" class="btn btn-warning">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
+                    <div class="card extra_card">
                         <a data-bs-toggle="modal" data-bs-target="#nokia-3310">
-                            <img src="/public/images/nokia-3310/nokia-3310.webp" class="card-img-top"
-                                style="max-width: 16em; height: auto;" alt="Nokia ">
+                            <img src="/public/images/m08.webp" class="card-img-top extra" alt="The Light Phone II">
                         </a>
                         <div class="card-body">
-                            <h5 class="card-title">Peraphone 001</h5>
+                            <h5 class="card-title">The Light Phone II</h5>
                             <p class="card-text">
-                                Fusionando lo mejor de la tecnología y la
-                                moda en un dispositivo elegante y potente. Con su diseño ultramoderno y funciones
-                                avanzadas, el Peraphone te ofrece una experiencia única, ¡sobrepasa tus expectativas con
-                                el
-                                Peraphone!
+                                El Light Phone II es un teléfono minimalista y premium. Carece de redes sociales,
+                                noticias sensacionalistas, correo electrónico, navegador web o cualquier otro flujo
+                                infinito que cause ansiedad. Se limita a llamadas y mensajes de texto, con un menú
+                                personalizable de herramientas sencillas. Su pantalla utiliza tecnología de papel
+                                electrónico.
                             </p>
                             <a href="#" class="btn btn-warning">Comprar</a>
                         </div>
