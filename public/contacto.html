@@ -4,46 +4,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulario de Registro</title>
+  <title>Formulario con Bootstrap y CSS</title>
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <style>
     /* Estilos personalizados */
     body {
-      background: url("./images/fondo.jpg") fixed;
+      background: url("./images/tecnico.jpg") fixed;
       background-size: cover;
+      color: white; /* Cambiamos el color del texto a blanco */
     }
 
     .custom-form {
-      background-color: #ffffff;
+      background-color: rgba(0, 0, 0, 0.7); /* Cambiamos el color de fondo del formulario */
       border-radius: 10px;
       box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
       padding: 20px;
       margin-top: 50px;
       opacity: 0;
-      transform: translateY(-50px);
+      transform: scale(0);
       animation: appear-container 2s ease forwards;
     }
 
     @keyframes appear-container {
       0% {
         opacity: 0;
-        transform: translateY(-50px);
+        transform: scale(0);
       }
       100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: scale(1);
       }
     }
 
     .custom-form h2 {
-      color: #333333;
+      color: #ffffff; /* Cambiamos el color del título a blanco */
       text-align: center;
       margin-bottom: 20px;
     }
 
     .custom-form .form-control {
       border-radius: 5px;
-      margin-bottom: 10px; /* Agregamos un margen inferior entre campos */
+      margin-bottom: 10px;
+      opacity: 0;
+      transform: scale(0);
+      color: #ffffff; /* Cambiamos el color del texto del input a blanco */
+      background-color: rgba(255, 255, 255, 0.2); /* Cambiamos el color de fondo del input */
+    }
+
+    .field-group:nth-child(1) .form-control,
+    .field-group:nth-child(2) .form-control,
+    .field-group:nth-child(3) .form-control,
+    .field-group:nth-child(4) .form-control {
+      animation: appear-field 1s ease forwards;
+    }
+
+    @keyframes appear-field {
+      0% {
+        opacity: 0;
+        transform: scale(0);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
 
     .custom-form .btn-primary {
@@ -70,49 +93,8 @@
       width: 100%;
       bottom: 0;
     }
-
-    .field-group {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-
-    .field-group:nth-child(1) {
-      animation: appear-field 1s ease forwards 1s; /* Primer campo aparece después de 1 segundo */
-    }
-
-    .field-group:nth-child(2) {
-      animation: appear-field 1s ease forwards 1.5s; /* Segundo campo aparece después de 1.5 segundos */
-    }
-
-    .field-group:nth-child(3) {
-      animation: appear-field 1s ease forwards 2s; /* Tercer campo aparece después de 2 segundos */
-    }
-
-    .field-group:nth-child(4) {
-      animation: appear-field 1s ease forwards 2.5s; /* Cuarto campo aparece después de 2.5 segundos */
-    }
-
-    .field-group:nth-child(5) {
-      animation: appear-field 1s ease forwards 3s; /* Quinto campo aparece después de 3 segundos */
-    }
-
-    .field-group:nth-child(6) {
-      animation: appear-field 1s ease forwards 3.5s; /* Sexto campo aparece después de 3.5 segundos */
-    }
-
-    .field-group:nth-child(7) {
-      animation: appear-field 1s ease forwards 4s; /* Séptimo campo aparece después de 4 segundos */
-    }
-
-    @keyframes appear-field {
-      0% {
-        opacity: 0;
-        transform: translateY(-20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    .form-control::placeholder{
+        color: white;
     }
   </style>
 </head>
@@ -151,33 +133,28 @@
     <div class="row justify-content-center">
       <div class="col-md-6">
         <div class="custom-form">
-          <h2>Registrate</h2>
+          <h2>Ponte en contacto con nosotros</h2>
           <form>
             <div class="form-group field-group">
               <label for="nombre">Nombre:</label>
               <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre">
             </div>
             <div class="form-group field-group">
-              <label for="apellido">Apellido:</label>
-              <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" name="email"
+                placeholder="Ingrese su correo electrónico">
             </div>
             <div class="form-group field-group">
-              <label for="contraseña">Contraseña:</label>
-              <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Ingrese su contraseña">
+              <label for="telefono">Teléfono:</label>
+              <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Ingrese su teléfono">
             </div>
             <div class="form-group field-group">
-              <label for="correo">Correo:</label>
-              <input type="email" class="form-control" id="correo" name="correo" placeholder="Ingrese su correo electrónico">
+              <label for="mensaje">Mensaje:</label>
+              <textarea class="form-control" id="mensaje" name="mensaje" rows="3"
+                placeholder="Escriba su mensaje"></textarea>
             </div>
-            <div class="form-group field-group">
-              <label for="situacion-laboral">Situación Laboral:</label>
-              <select class="form-control" id="situacion-laboral" name="situacion-laboral">
-                <option value="trabajando">Trabajando</option>
-                <option value="paro">En paro</option>
-                <option value="paso-de-currar">Mis padres me mantienen</option>
-              </select>
-            </div>
-            <button type="submit" class="btn btn-primary">Registrarse</button>
+            <br>
+            <button type="submit" class="btn btn-primary">Enviar</button>
           </form>
         </div>
       </div>
@@ -191,4 +168,5 @@
     </div>
   </footer>
 </body>
+
 </html>
