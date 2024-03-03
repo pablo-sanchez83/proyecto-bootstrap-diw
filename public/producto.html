@@ -27,67 +27,26 @@
             margin: 5%;
         }
 
-        .color-btn:hover {
-            background-color: rgba(255, 193, 7, .5);
-            transition: .5s;
-        }
-
         .specs:nth-child(even) {
             background-color: rgba(255, 193, 7, .5);
         }
 
-        .custom-checkbox {
-            display: none;
-        }
-
-        .custom-checkbox+label {
-            font-weight: normal;
+        .boton-comprar {
+            background-color: #FFC107;
+            transition: background-color 0.5s, transform 0.5s, box-shadow 0.5s;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
             cursor: pointer;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
         }
 
-        .custom-checkbox+label span {
-            display: inline-block;
-            vertical-align: middle;
-            margin-right: 5px;
-            width: 24px;
-            height: 24px;
-            cursor: pointer;
-            position: relative;
-            border: 1px solid #EAECEF;
-            background-color: #ffffff;
-            border-radius: 3px;
-            font-weight: 500;
+        .boton-comprar:hover {
+            background-color: rgba(255, 193, 7, 0.6);
+            transform: translateY(-5px);
+            box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
         }
-
-        .custom-checkbox+label span::before {
-            content: "";
-            opacity: 0;
-            width: 12px;
-            height: 12px;
-            background-color: #000000;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            bottom: auto;
-            right: auto;
-            transform: translate(-50%, -50%);
-            transition: opacity 0.2s;
-            border-radius: 2px;
-        }
-
-        .custom-checkbox:checked+label span::before {
-            opacity: 1;
-        }
-
-        .custom-checkbox:disabled+label {
-            opacity: 0.5;
-            cursor: default;
-        }
-
-        .custom-checkbox:disabled+label span {
-            cursor: default;
-        }
-
 
 
 
@@ -216,12 +175,15 @@
                     </div>
                 </div>
             </div>
+
+
+
             <div class="col-md-5">
                 <div class="card border-0 h-100 columna2">
                     <div class="card-body">
                         <!-- Contenido columna 2 -->
                         <h2 class="card-title">Nothing Phone (2)</h2>
-                        <h3 class="card-subtitle mb-2 text-muted">299.99 €</h3>
+                        <h3 class="card-subtitle mb-2 text-muted">599.99 €</h3>
                         <p class="card-text  p-venta">
                             El Nothing Phone 2 es un smartphone de gama alta con un diseño icónico similar al
                             iPhone. Sin embargo, su principal atractivo son los LEDs que iluminan el cristal
@@ -239,14 +201,18 @@
                             2 años de garantía +10€
                         </label>
                         <div class="row">
-                            <button type="submit" class="btn btn-warning mt-4 col-8">Añadir al carrito</button>
+                            <button type="submit" class="btn btn-warning mt-4 col-8 boton-comprar">Añadir al
+                                carrito</button>
                             <span class="col-1"></span>
-                            <button type="submit" class="btn btn-warning mt-4 col-3">Comprar ya</button>
+                            <button type="submit" class="btn btn-warning mt-4 col-3 boton-comprar">Comprar ya</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
+
         <div class="p-5 row-section row margin-between">
             <div class="col-md-12">
                 <div class="card border-0 p-5">
