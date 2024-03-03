@@ -26,6 +26,26 @@
             margin: 5%;
         }
 
+        .specs {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(255, 193, 7, .5);
+
+        }
+
+        th {
+            background-color: #ddd;
+        }
+
 
 
         body {
@@ -58,47 +78,52 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand text-white" href="/index.html"><img src="/public/images/icon.svg" type="image/svg+xml" width="30" height="30"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="contenedor">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/public/productos.html">Smartphones</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Ordenadores
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Sobremesa</a></li>
-                    <li><a class="dropdown-item" href="#">Portátiles</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">SmartWatch</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Accesorios</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/public/contacto.html">Contáctanos</a>
-                </li>
-              </ul>
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="navbar-brand" href="/public/registro.html"><img src="/public/images/person-circle.svg" type="image/svg+xml" style="height: 30px; width: 30px;" class="icono-login"></a>
-                </li>
-              </ul>
+            <a class="navbar-brand text-white" href="/index.html"><img src="/public/images/icon.svg"
+                    type="image/svg+xml" width="30" height="30"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="contenedor">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/public/productos.html">Smartphones</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Ordenadores
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Sobremesa</a></li>
+                                <li><a class="dropdown-item" href="#">Portátiles</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SmartWatch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Accesorios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/public/contacto.html">Contáctanos</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="/public/registro.html"><img
+                                    src="/public/images/person-circle.svg" type="image/svg+xml"
+                                    style="height: 30px; width: 30px;" class="icono-login"></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </div>
-      </nav>
+    </nav>
 
 
 
@@ -155,9 +180,10 @@
                         <h2 class="card-title">Nothing Phone (2)</h2>
                         <h3 class="card-subtitle mb-2 text-muted">299.99 €</h3>
                         <p class="card-text  p-venta">
-                            Descubre la leyenda renovada: el Nokia 3310. Con su diseño icónico y durabilidad
-                            incomparable, este teléfono te ofrece fiabilidad y estilo retro. Disfruta de llamadas
-                            claras, mensajería instantánea y juegos clásicos. ¡Vuelve a lo básico con el Nokia 3310!
+                            El Nothing Phone 2 es un smartphone de gama alta con un diseño icónico similar al
+                            iPhone. Sin embargo, su principal atractivo son los LEDs que iluminan el cristal
+                            trasero, creando una experiencia única. Cuenta con Glyph Interface, una nueva
+                            forma de comunicación mediante luces y sonidos.
                         </p>
                     </div>
                 </div>
@@ -169,81 +195,85 @@
                     <div class="card-body">
                         <!-- Contenido fila 2 -->
                         <h2 class="card-title">Especificaciones</h2>
-                        <p class="card-text p-caracteristicas">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi itaque
-                            quas et deleniti, ipsum totam distinctio inventore laboriosam nam, nisi error quidem
-                            laborum! Neque maiores consequatur ipsum quasi corrupti.
-                            Repellat fuga et ab. Accusamus excepturi impedit quas iste, vitae libero saepe
-                            exercitationem modi similique culpa odio illum ex, corrupti accusantium. Ab modi recusandae
-                            aliquid ullam consequatur vel sequi ipsum!
-                            Hic, autem. Voluptatem, sunt? Voluptatum harum, perferendis exercitationem minima iure
-                            assumenda error enim similique et at dolorum? Officiis ipsum ducimus officia sunt nisi
-                            molestiae inventore dignissimos! Illum dolorum neque inventore?
-                            Aspernatur, quod. At, ratione. Impedit voluptatem quae nisi, minus inventore cumque maxime,
-                            voluptatibus ea maiores optio eaque accusantium voluptatum sequi hic nihil officiis
-                            praesentium sapiente explicabo repudiandae omnis repellendus sed.
-                            Dolorem in tempora totam alias. Officiis voluptatem deserunt hic animi, libero atque debitis
-                            aliquam, asperiores rem ea quasi praesentium aperiam dolores iusto ipsum consequuntur! Ipsam
-                            quod obcaecati voluptate? Adipisci, facere.
-                            Dolorum error laboriosam incidunt, unde alias quasi a nostrum perspiciatis nam perferendis
-                            doloremque consequuntur blanditiis labore iste modi, at, nisi illo dolor accusamus. Vero
-                            corporis quas nam fuga dolore alias.
-                            Adipisci, harum perferendis! Porro alias minima, repellendus rerum neque aperiam magni
-                            reiciendis? Deleniti et illum natus cupiditate, vero eligendi, quos libero, eaque provident
-                            odit magni ducimus fugit id unde. Sapiente?
-                            Quae officiis sunt dolorem porro? Ut laudantium non unde doloribus accusamus vitae, magnam
-                            quis eum nemo labore facere voluptate perspiciatis fugit dolorum id maiores ipsum possimus
-                            impedit necessitatibus sit dolorem?
-                            Minus, beatae nemo odit maiores, tenetur deserunt reiciendis aliquam fugit sint incidunt
-                            iste doloremque fugiat possimus quo provident molestias modi excepturi ipsum, voluptatibus
-                            quis? Soluta omnis dicta porro beatae quas.
-                            Nam accusamus quas aliquam itaque dolor! Soluta animi, aperiam placeat suscipit, ea quam,
-                            quia nesciunt et vel eligendi nostrum at unde delectus facilis. Corrupti dolores itaque
-                            similique aliquam debitis odit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-                            animi itaque quas et deleniti, ipsum totam distinctio inventore laboriosam nam, nisi error
-                            quidem laborum! Neque maiores consequatur ipsum quasi corrupti.
-                            Repellat fuga et ab. Accusamus excepturi impedit quas iste, vitae libero saepe
-                            exercitationem modi similique culpa odio illum ex, corrupti accusantium. Ab modi recusandae
-                            aliquid ullam consequatur vel sequi ipsum!
-                            Hic, autem. Voluptatem, sunt? Voluptatum harum, perferendis exercitationem minima iure
-                            assumenda error enim similique et at dolorum? Officiis ipsum ducimus officia sunt nisi
-                            molestiae inventore dignissimos! Illum dolorum neque inventore?
-                            Aspernatur, quod. At, ratione. Impedit voluptatem quae nisi, minus inventore cumque maxime,
-                            voluptatibus ea maiores optio eaque accusantium voluptatum sequi hic nihil officiis
-                            praesentium sapiente explicabo repudiandae omnis repellendus sed.
-                            Dolorem in tempora totam alias. Officiis voluptatem deserunt hic animi, libero atque debitis
-                            aliquam, asperiores rem ea quasi praesentium aperiam dolores iusto ipsum consequuntur! Ipsam
-                            quod obcaecati voluptate? Adipisci, facere.
-                            Dolorum error laboriosam incidunt, unde alias quasi a nostrum perspiciatis nam perferendis
-                            doloremque consequuntur blanditiis labore iste modi, at, nisi illo dolor accusamus. Vero
-                            corporis quas nam fuga dolore alias.
-                            Adipisci, harum perferendis! Porro alias minima, repellendus rerum neque aperiam magni
-                            reiciendis? Deleniti et illum natus cupiditate, vero eligendi, quos libero, eaque provident
-                            odit magni ducimus fugit id unde. Sapiente?
-                            Quae officiis sunt dolorem porro? Ut laudantium non unde doloribus accusamus vitae, magnam
-                            quis eum nemo labore facere voluptate perspiciatis fugit dolorum id maiores ipsum possimus
-                            impedit necessitatibus sit dolorem?
-                            Minus, beatae nemo odit maiores, tenetur deserunt reiciendis aliquam fugit sint incidunt
-                            iste doloremque fugiat possimus quo provident molestias modi excepturi ipsum, voluptatibus
-                            quis? Soluta omnis dicta porro beatae quas.
-                            Nam accusamus quas aliquam itaque dolor! Soluta animi, aperiam placeat suscipit, ea quam,
-                            quia nesciunt et vel eligendi nostrum at unde delectus facilis. Corrupti dolores itaque
-                            similique aliquam debitis odit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-                            animi itaque quas et deleniti, ipsum totam distinctio inventore laboriosam nam, nisi error
-                            quidem laborum! Neque maiores consequatur ipsum quasi corrupti.
-                            Repellat fuga et ab. Accusamus excepturi impedit quas iste, vitae libero saepe
-                            exercitationem modi similique culpa odio illum ex, corrupti accusantium. Ab modi recusandae
-                            aliquid ullam consequatur vel sequi ipsum!
-                            Hic, autem. Voluptatem, sunt? Voluptatum harum, perferendis exercitationem minima iure
-                            assumenda error enim similique et at dolorum? Officiis ipsum ducimus officia sunt nisi
-                            molestiae inventore dignissimos! Illum dolorum neque inventore?
-                            Aspernatur, quod. At, ratione. Impedit voluptatem quae nisi, minus inventore cumque maxime,
-                            voluptatibus ea maiores optio eaque accusantium voluptatum sequi hic nihil officiis
-                            praesentium sapiente explicabo repudiandae omnis repellendus sed.
-                            Dolorem in tempora totam alias. Officiis voluptatem deserunt hic animi, libero atque debitis
-                            aliquam, asperiores rem ea quasi praesentium aperiam dolores iusto ipsum consequuntur! Ipsam
-                            quod obcaecati voluptate? Adipisci, facere.
-                        </p>
+
+                        <table class="specs">
+                            <tbody>
+                                <tr>
+                                    <td>Procesador</td>
+                                    <td>Qualcomm Snapdragon 8+ Gen 1</td>
+                                </tr>
+                                <tr>
+                                    <td>Capacidad</td>
+                                    <td>8GB RAM + 128GB almacenamiento<br>12GB RAM + 256GB almacenamiento<br>12GB RAM +
+                                        512GB almacenamiento</td>
+                                </tr>
+                                <tr>
+                                    <td>Protección</td>
+                                    <td>IP54</td>
+                                </tr>
+                                <tr>
+                                    <td>Dimensiones</td>
+                                    <td>162.1 mm x 76.4 mm x 8.6 mm</td>
+                                </tr>
+                                <tr>
+                                    <td>Peso</td>
+                                    <td>201.2 g</td>
+                                </tr>
+                                <tr>
+                                    <td>Tamaño de la pantalla</td>
+                                    <td>Pantalla AMOLED de 6,7" LTPO flexible</td>
+                                </tr>
+                                <tr>
+                                    <td>Cristal delantero</td>
+                                    <td>Corning® Gorilla® Glass 5</td>
+                                </tr>
+                                <tr>
+                                    <td>Cristal trasero</td>
+                                    <td>Corning® Gorilla® Pillowed Glass 5</td>
+                                </tr>
+                                <tr>
+                                    <td>Brillo máximo*</td>
+                                    <td>1000 nits</td>
+                                </tr>
+                                <tr>
+                                    <td>Brillo máximo (HDR)*</td>
+                                    <td>1600 nits</td>
+                                </tr>
+                                <tr>
+                                    <td>Frecuencia de actualización</td>
+                                    <td>1 - 120 Hz</td>
+                                </tr>
+                                <tr>
+                                    <td>Pantalla siempre encendida</td>
+                                    <td>1 Hz</td>
+                                </tr>
+                                <tr>
+                                    <td>Profundidad de color</td>
+                                    <td>10 bits</td>
+                                </tr>
+                                <tr>
+                                    <td>Batería</td>
+                                    <td>4700 mAh</td>
+                                </tr>
+                                <tr>
+                                    <td>Carga por cable</td>
+                                    <td>45W</td>
+                                </tr>
+                                <tr>
+                                    <td>Carga inalámbrica</td>
+                                    <td>15W Qi con carga dual</td>
+                                </tr>
+                                <tr>
+                                    <td>Carga inversa</td>
+                                    <td>5W</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        Más información en la siguiente <a href="https://es.nothing.tech/pages/phone-2" target="_blank">página</a>
+                                    </td>
+                                  </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -264,7 +294,7 @@
 
     <script src="/js/jquery-3.7.1.min.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
-<!--     <script src="/js/bootstrap.min.js"></script> -->
+    <!--     <script src="/js/bootstrap.min.js"></script> -->
 </body>
 </body>
 
